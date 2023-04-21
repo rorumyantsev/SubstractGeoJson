@@ -5,7 +5,7 @@ import shapely
 
 Zone1 = st.text_area ("input coordinates that will be substracted from", "")
 Zone1_json = json.loads(Zone1)
-Zone_to_substract_from = shapely.from_geojson(Zone1_json)
+Zone_to_substract_from = shapely.from_geojson(Zone1)
 
 Zone2 = st.text_area ("input coordinates that will be substracted", "")
 Zone_to_substract = shapely.geometry.Polygon(Zone2)

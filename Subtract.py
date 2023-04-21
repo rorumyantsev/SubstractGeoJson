@@ -3,11 +3,11 @@ import streamlit as st
 import shapely
 
 
-Zone1 = st.text_area ("input coordinates that will be substracted from", "")
-Zone_to_substract_from = shapely.geometry.Polygon(Zone1)
+Zone1 = st.text_area ("input geojson that will be substracted from", "")
+Zone_to_substract_from = shapely.geometry.Polygon(shapely.from_geojson(Zone1))
 
-Zone2 = st.text_area ("input coordinates that will be substracted", "")
-Zone_to_substract = shapely.geometry.Polygon(Zone2)
+Zone2 = st.text_area ("input geojson that will be substracted", "")
+Zone_to_substract = shapely.geometry.Polygon(shapely.from_geojson(Zone2))
 
 Tariff_zone = shapely.geometry.Polygon([
                         [

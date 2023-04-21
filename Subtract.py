@@ -1427,6 +1427,6 @@ Polygon = shapely.geometry.Polygon([
                         ]
                     ])
 
-result = to_geojson(Tariff_zone.difference(Polygon))
+result = to_geojson((Tariff_zone.difference(Polygon)), indent=2)
 
 st.write(result)

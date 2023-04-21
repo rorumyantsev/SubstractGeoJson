@@ -3,7 +3,7 @@ import streamlit as st
 import shapely
 
 
-Zone1 = st.text_area ("input geojson that will be substracted from", "")
+Zone1 = st.text_area ("input geojson that will be substracted from", "{"type": "Point","coordinates": [1, 2]}")
 Zone_to_substract_from = shapely.geometry.Polygon(shapely.from_geojson(Zone1))
 
 Zone2 = st.text_area ("input geojson that will be substracted", "")

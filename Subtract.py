@@ -1436,6 +1436,6 @@ Polygon = shapely.geometry.Polygon([
                         ]
                     ])
 
-result = (Zone_to_be_substracted_from.difference(Zone_to_be_substracted))
+result = (Zone_to_substract_from.difference(Zone_to_substracted))
 
 st.write(shapely.to_geojson(result, indent=2))

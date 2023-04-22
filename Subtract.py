@@ -1,7 +1,7 @@
 import json
 import streamlit as st
 import shapely
-z1 = '{
+z1 = {
             "id": "9bc0edecca66440287e7882e8f314837",
             "name": "lima",
             "geo_id": 21157,
@@ -1281,7 +1281,7 @@ z1 = '{
             },
             "area": 0.03415657560930163,
             "created": "2023-03-31T13:47:58.251+0000"
-        }'
+        }
 z2 = {
             "id": "9daef71bba99410c82a446691b2d3a2a",
             "geoarea_type": "logistic_supply",

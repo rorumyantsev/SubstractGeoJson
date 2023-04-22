@@ -1282,6 +1282,7 @@ z1 = {
             "area": 0.03415657560930163,
             "created": "2023-03-31T13:47:58.251+0000"
         }
+z1 = string(z1)
 z2 = {
             "id": "9daef71bba99410c82a446691b2d3a2a",
             "geoarea_type": "logistic_supply",

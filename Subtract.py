@@ -20,4 +20,4 @@ try:
   result = (Zone_to_substract_from.difference(Zone_to_substract))
   st.write(shapely.to_geojson(result, indent=2))
 except:
-  st.write("enter valid geojsons"
+  st.write("enter valid geojsons")

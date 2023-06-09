@@ -2,7 +2,7 @@ import json
 import streamlit as st
 import shapely
 
-option = st.selectbox("Substract or add?",("Substract","Add"))
+option = st.selectbox('Substract or add?',('Substract','Add'))
 Zone1 = st.text_area ("input coordinates that will be substracted from", "")
 try:
   Zone1_json = json.loads(Zone1)
@@ -18,7 +18,7 @@ except:
   Zone2_json = "null"
   Zone_to_substract = "null"
 try:
-  if option == "substract":
+  if option == "Substract":
     result = (Zone_to_substract_from.difference(Zone_to_substract))
   else:
     result = (Zone_to_substract_from.union(Zone_to_substract))                    

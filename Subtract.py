@@ -2,7 +2,7 @@ import json
 import streamlit as st
 import shapely
 
-option = st.selectbox("Substract or add?",("Substract","Add")
+option = st.selectbox("Substract or add?",("Substract","Add"))
 Zone1 = st.text_area ("input coordinates that will be substracted from", "")
 try:
   Zone1_json = json.loads(Zone1)
